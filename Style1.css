@@ -1,0 +1,62 @@
+﻿body {
+    background-color: #D0EDFB;
+    margin: 0px;
+    padding : 0px;
+}
+/*---------------------- En-tête ---------------------------------------------------*/
+header {
+    background-color: pink;
+    min-width: 60%;
+    width: 100%;
+
+
+}
+
+#Conteneur_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+/*---------------------- Hebergement ---------------------------------------------------*/
+#Hebergement {
+    background-color: green;
+    min-width: 60%;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+}
+
+article {
+    background-color: grey;
+    width: 60%;
+}
+
+aside {
+    background-color: white;
+    width: 40%;
+}
+
+/*---------------------- Activites ---------------------------------------------------*/
+
+#Activites {
+    background-color: cornflowerblue;
+    min-width: 60%;
+    min-height: 300px;
+    width: 100%;
+}
+
+/*---------------------- Footer ---------------------------------------------------*/
+
+footer {
+    background-color: #3A3C3D;
+    min-height: 150px;
+}
