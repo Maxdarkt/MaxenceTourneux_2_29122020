@@ -4,57 +4,76 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style1.css" />
+    <script src="https://kit.fontawesome.com/b05a09a7bc.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 
 <body>
-
-    <!------------------------ Header ------------------------------------------------>
-    <header>
-        <div id="Conteneur_menu">
-            <div id="logo">
-                <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" height="35px" />
+    <div id="Conteneur_Global">
+        <!------------------------ Header ------------------------------------------------>
+        <header>
+            <div id="Conteneur_menu">
+                <div id="logo">
+                    <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" height="35" />
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
+                        <li><a href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </div>
 
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
-        
-        
-    </header>
+            
+            <div id="barre_rechercher">
+                   
+                     <div class="arrondi_gauche"><form action="#" method="post"><label for="recherche"><i class="fas fa-map-marker-alt"></i></label></div>
+                        <div><input class="border" type="search" name="search" value="Marseille, France" id="recherche" /></div>
+                        <div><input class="bouton_envoi" type="button" name="envoi" value="Rechercher" /></form></div>
+                    
+            </div>
 
-    <!------------------------ Sections ------------------------------------------------>
-    <section id="Hebergement">
-        <article>
-            <p>Ceci est un article !</p>
-        </article>
+            <div id="Filtres">
+                
+                <ul>
+                    <li>Filtres</li>
+                    <span class="bulle"><i class="fas fa-money-bill-wave"></i></span><li class="border_1">Economique</li>
+                    <span class="bulle"><i class="fas fa-child"></i></span><li class="border_1">Familial</li>
+                    <span class="bulle"><i class="fas fa-heart"></i></span><li class="border_1">Romantique</li>
+                    <span class="bulle"><i class="fas fa-dog"></i></span><li class="border_1">Animaux autorisés</li>
+                </ul>
+            </div>
 
-        <aside>
-            <p>Ceci est un aside !</p>
+        </header>
 
-        </aside>
+        <!------------------------ Sections ------------------------------------------------>
+        <section id="Hebergement">
+            <article>
+                <p>Ceci est un article !</p>
+            </article>
 
-    </section>
+            <aside>
+                <p>Ceci est un aside !</p>
 
-    <!------------------------ Sections ------------------------------------------------>
-    <section id="Activites">
-        <p>Ceci est la seconde section</p>
-    </section>
+            </aside>
 
-    <!------------------------ footer ------------------------------------------------>
-    <footer>
-        <p>footer</p>
-    </footer>
+        </section>
+
+        <!------------------------ Sections ------------------------------------------------>
+        <section id="Activites">
+            <p>Ceci est la seconde section</p>
+        </section>
+
+        <!------------------------ footer ------------------------------------------------>
+        <footer>
+            <p>footer</p>
+        </footer>
 
 
 
-
+    </div>
 </body>
 </html>

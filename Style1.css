@@ -1,24 +1,35 @@
-﻿body {
+﻿/*----------|----------|----------|----------|----------|----------|     Généralitées      |----------|----------|----------|----------|----------|----------|----------*/
+body {
     background-color: #D0EDFB;
     margin: 0px;
     padding : 0px;
 }
-/*---------------------- En-tête ---------------------------------------------------*/
+
+#Conteneur_Global {
+    width: 900px;
+    margin: auto;
+    font-size: 1em;
+}
+
+section {
+    margin: 0px;
+}
+/*----------|----------|----------|----------|----------|----------|     En-tête      |----------|----------|----------|----------|----------|----------|----------*/
 header {
     background-color: pink;
     min-width: 60%;
     width: 100%;
-
-
 }
 
-#Conteneur_menu {
+/*------------------------------|    Menu en Haut logo + Hebergement | Activites | S'inscrire     |------------------------------*/
+
+#Conteneur_menu {   /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-nav ul {
+nav ul {            /*Menu 1 en haut à droite : Suppression des listes à puces*/
     list-style-type: none;
     display: flex;
 }
@@ -26,7 +37,103 @@ nav ul {
 nav li {
     margin-right: 15px;
 }
-/*---------------------- Hebergement ---------------------------------------------------*/
+
+header h3, p{
+    margin : 5px;
+}
+
+header p {
+    font-size: 0.8em;
+}
+
+/*------------------------------|    Menu Barre de Recherche     |------------------------------*/
+
+#barre_rechercher {     /*Barre de recherche : Flex pour aligner les 3 éléments*/
+    display: flex;
+    justify-content: start;
+}
+
+
+#barre_rechercher i {   /*Barre de recherche : placement de l'icone localisation*/
+    width: 25px;
+    position: relative;
+    top: 4px;
+    left: 8px;
+}
+
+#barre_rechercher input, label {    /*Barre de recherche : hauteur et marges*/
+    height: 25px;
+    margin: 0px 0px 0px 0px;
+}
+
+.bouton_envoi {                     /*Barre de recherche : Class pour gérer le bouton "Rechercher"*/
+    background-color: rgb(0,101,252);
+    border-radius: 0px 10px 10px 0px;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.border {                           /*Barre de recherche : Class pour gérer la bordure du champ de recherche*/
+    border: 1px solid rgb(242,242,242);
+}
+
+.arrondi_gauche {                   /*Barre de recherche : Class pour gérer le fond de l'icone localisation*/
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(242,242,242);
+}
+
+/*------------------------------|    Menu Filtre     |------------------------------*/
+
+#Filtres ul {                       /*Barre de Filtres : Gestion Flex*/
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+#Filtres li {
+    padding-top: 5px;
+    padding-right:10px;
+}
+
+#Filtres i {
+    position: relative;
+    top: 8px;
+    height: 25px;
+    width: 25px;
+    color: rgb(0,101,252);
+}
+
+#Filtres span {
+    text-align: center;
+}
+
+.border_1 {
+    border-top: 1px solid rgb(242,242,242);
+    border-bottom: 1px solid rgb(242,242,242);
+    border-right: 1px solid rgb(242,242,242);
+    border-left: 1px solid rgb(242,242,242);
+    border-radius: 25px 25px 25px 25px;
+    vertical-align: middle;
+    padding-left: 35px;
+}
+
+.bulle {
+    position:relative;
+    top:0px;
+    left:35px;
+    height:35px;
+    width:35px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(242,242,242);
+    margin-right:5px;
+}
+
+/*----------|----------|----------|----------|----------|----------|     Hebergement      |----------|----------|----------|----------|----------|----------|----------*/
 #Hebergement {
     background-color: green;
     min-width: 60%;
@@ -45,7 +152,7 @@ aside {
     width: 40%;
 }
 
-/*---------------------- Activites ---------------------------------------------------*/
+/*----------|----------|----------|----------|----------|----------|     Activites     |----------|----------|----------|----------|----------|----------|----------*/
 
 #Activites {
     background-color: cornflowerblue;
@@ -54,7 +161,7 @@ aside {
     width: 100%;
 }
 
-/*---------------------- Footer ---------------------------------------------------*/
+/*----------|----------|----------|----------|----------|----------|     Footer     |----------|----------|----------|----------|----------|----------|----------*/
 
 footer {
     background-color: #3A3C3D;
