@@ -328,32 +328,36 @@ aside {
 
 /*Div principaux x 4u*/
 
-.bloc_3:nth-child(1) {
+.bloc_3:nth-child(1) { /*Colonne 1*/
     background-color: blue;
     flex: 0.8;
     margin-right: 1%;
     border-radius: 15px;
     display:flex;
     flex-direction:column;
-    overflow:hidden;
+    justify-content : flex-end;
 }
 
-.bloc_3:nth-child(1) img {
-    max-height: 80%;
+.bloc_3:nth-child(1) div { /*Réglage de l'image en fond d'écran du div*/
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Vieux_port.jpg);
+    height: 90%;
     width: auto;
-    max-width: 100%;
-    height: auto;
     border-radius: 15px 15px 0px 0px;
 }
 
-.bloc_3:nth-child(2) {
+.bloc_3:nth-child(2) { /*Conteneur de la colonne 2*/
     background-color: orange;
     flex: 0.8;
     margin-left: 1%;
     margin-right: 1%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.bloc_3:nth-child(3) {
+
+.bloc_3:nth-child(3) { /*Colonne 3*/
     background-color: red;
     flex: 0.8;
     margin-left: 1%;
@@ -361,25 +365,27 @@ aside {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
-.bloc_3:nth-child(3) img {
-    max-height: 80%;
+.bloc_3:nth-child(3) div { /*Réglage de l'image en fond d'écran du div*/
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Parc_calanques.jpg);
+    height: 90%;
     width: auto;
-    max-width: 100%;
-    height: auto;
     border-radius: 15px 15px 0px 0px;
 }
-
-.bloc_3:nth-child(4) {
+    
+.bloc_3:nth-child(4) { /*Conteneur de la colonne 4*/
     background-color: mediumpurple;
     flex: 0.8;
     margin-left: 1%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Div secondaire*/
-
 
 .int_1:nth-child(1) {
     flex: 0.6;
@@ -388,14 +394,14 @@ aside {
     margin: 0% 0% 4% 0%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
-.int_1:nth-child(1) img {
-    max-height: 100px;
+.int_1:nth-child(1) div { /*Réglage de l'image en fond d'écran du div - Colonne 2*/
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Port_pomegues.jpg);
+    height: 90%;
     width: auto;
-    max-width: 100%;
-    height: auto;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -406,16 +412,17 @@ aside {
     margin: 4% 0% 0% 0%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
-.int_1:nth-child(2) img {
-    max-height: 80px;
+.int_1:nth-child(2) div {
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Iles_Frioul.jpg);
+    height: 90%;
     width: auto;
-    max-width: 100%;
-    height: auto;
     border-radius: 15px 15px 0px 0px;
 }
+
 
 .int_2:nth-child(1) {
     flex: 0.5;
@@ -424,14 +431,14 @@ aside {
     margin: 0% 0% 4% 0%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
-.int_2:nth-child(1) img {
-    max-height: 100px;
+.int_2:nth-child(1) div {
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Notre_dame_de_la_garde.jpg);
+    height: 90%;
     width: auto;
-    max-width: 100%;
-    height: auto;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -442,14 +449,14 @@ aside {
     margin: 4% 0% 0% 0%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: flex-end;
 }
 
-.int_2:nth-child(2) img {
-    max-height: 100px;
+.int_2:nth-child(2) div {
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Parc_longchamp.jpg);
+    height: 90%;
     width: auto;
-    max-width: 100%;
-    height: auto;
     border-radius: 15px 15px 0px 0px;
 }
 
