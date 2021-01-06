@@ -44,6 +44,8 @@ nav ul {            /*Menu 1 en haut à droite : Suppression des listes à puces
 
 nav li {
     margin-right: 15px;
+    margin-top: 10px;
+    padding-top : 10px;
 }
 
 header h3, p{
@@ -54,9 +56,18 @@ header p {
     font-size: 0.8em;
 }
 
-/*------------------------------|    Menu Barre de Recherche     |------------------------------*/
+nav a {
+    text-decoration: none;
+    color: rgb(128,128,128);;
+}
 
-#barre_rechercher {     /*Barre de recherche : Flex pour aligner les 3 éléments*/
+nav a:hover, a:focus {
+    text-decoration : overline;
+    color: #0065FC;
+}
+
+/*------------------------------|    Menu Barre de Recherche     |------------------------------*/
+#barre_rechercher { /*Barre de recherche : Flex pour aligner les 3 éléments*/
     display: flex;
     justify-content: start;
 }
@@ -203,18 +214,24 @@ article h3{
     margin-bottom:20px;
 }
 
-#Image_bloc_1
-{
+#Image_bloc_1 {
     height: 120px;
-    overflow:hidden;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
 }
 
-#Bloc_1 img {
+.resize_width { /*Redimensionnement img par défaut*/
     height: auto;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px 15px 0px 0px;
+}
+
+.resize_height { /*Redimensionnement image pour img 5*/
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Legende_1 {
@@ -279,14 +296,29 @@ aside {
 
 #Image_bloc_2 {
     height: 100%;
-    width:45%;
+    width: 170px;
+    border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
 
+/*
 #Bloc_2 img {
     height: 100%;
     width: auto;
-    border-radius: 15px 0px 0px 15px;
+}*/
+
+.resize_width_pop {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resize_height_pop { 
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Legende_2 {
@@ -326,34 +358,36 @@ aside {
 }
 
 
-/*Div principaux x 4u*/
+/*------------------------------------------------------Div + Flexbox pour créer les 4 colonnes-------------------------------------------------------------------------------------*/
 
 .bloc_3:nth-child(1) { /*Colonne 1*/
     background-color: blue;
     flex: 0.8;
     margin-right: 1%;
     border-radius: 15px;
-    display:flex;
-    flex-direction:column;
-    justify-content : flex-end;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.bloc_3:nth-child(1) div { /*Réglage de l'image en fond d'écran du div*/
+
+/*
+.bloc_3:nth-child(1) div { /*Réglage de l'image en fond d'écran du div*//*
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Vieux_port.jpg);
     height: 90%;
     width: auto;
     border-radius: 15px 15px 0px 0px;
 }
+*/
 
 .bloc_3:nth-child(2) { /*Conteneur de la colonne 2*/
     background-color: orange;
     flex: 0.8;
     margin-left: 1%;
     margin-right: 1%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -363,106 +397,140 @@ aside {
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 15px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.bloc_3:nth-child(3) div { /*Réglage de l'image en fond d'écran du div*/
+/*
+.bloc_3:nth-child(3) div { /*Réglage de l'image en fond d'écran du div*//*
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Parc_calanques.jpg);
     height: 90%;
     width: auto;
     border-radius: 15px 15px 0px 0px;
-}
-    
+}*/
+
 .bloc_3:nth-child(4) { /*Conteneur de la colonne 4*/
     background-color: mediumpurple;
     flex: 0.8;
     margin-left: 1%;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
 }
 
 /* Div secondaire*/
-
-.int_1:nth-child(1) {
+.int_1:nth-child(1) { /*Colonne 2 : enfant 1 60 %*/
     flex: 0.6;
     background-color: saddlebrown;
     border-radius: 15px;
     margin: 0% 0% 4% 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    overflow: hidden;
 }
 
-.int_1:nth-child(1) div { /*Réglage de l'image en fond d'écran du div - Colonne 2*/
+/*
+.int_1:nth-child(1) div { /*Réglage de l'image en fond d'écran du div - Colonne 2*//*
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Port_pomegues.jpg);
     height: 90%;
     width: auto;
     border-radius: 15px 15px 0px 0px;
-}
+}*/
 
-.int_1:nth-child(2) {
+.int_1:nth-child(2) { /*Colonne 2 : enfant 2 40 %*/
     flex: 0.4;
     background-color: orangered;
     border-radius: 15px;
     margin: 4% 0% 0% 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    overflow: hidden;
 }
 
+/*
 .int_1:nth-child(2) div {
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Iles_Frioul.jpg);
     height: 90%;
     width: auto;
     border-radius: 15px 15px 0px 0px;
-}
+}*/
 
 
-.int_2:nth-child(1) {
+.int_2:nth-child(1) { /*Colonne 4 : enfant 1 50 %*/
     flex: 0.5;
     background-color: purple;
     border-radius: 15px;
     margin: 0% 0% 4% 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    overflow: hidden;
 }
 
+/*
 .int_2:nth-child(1) div {
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Notre_dame_de_la_garde.jpg);
     height: 90%;
     width: auto;
     border-radius: 15px 15px 0px 0px;
-}
+}*/
 
-.int_2:nth-child(2) {
+.int_2:nth-child(2) { /*Colonne 4 : enfant 1 50 %*/
     flex: 0.5;
     background-color: rebeccapurple;
     border-radius: 15px;
     margin: 4% 0% 0% 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    overflow: hidden;
 }
-
+/*
 .int_2:nth-child(2) div {
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Parc_longchamp.jpg);
     height: 90%;
     width: auto;
     border-radius: 15px 15px 0px 0px;
+}*/
+
+/*-------------------------------------------------------Création des DIV à l'intérieur des Bloc ----------------------------------------------------------------*/
+
+#Image_bloc_3_colonne { /*Réglage Image + légende des colonnes 1 et 3*/
+    flex: 1;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
 }
 
-/* Bloc 3*/
-/*Colonne 1*/
+#Legende_3 {
+    height:40px;
+    position :relative;
+    top : -10px;
+    left : 15px;
+}
 
+#Image_bloc_3_colonne img {
+height: 100%;
+width: auto;
+}
+
+#Image_bloc_3_colonne2-1 { /*Réglage Image + légende de l'enfant 1 de la colonne 2*/
+    height : 130px;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+#Image_bloc_3_colonne2-1 img {
+    height: auto;
+    width: 100%;
+}
+
+#Image_bloc_3_colonne2-2 { /*Réglage Image + légende de l'enfant 2 de la colonne 2*/
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+#Image_bloc_3_colonne2-2 img {
+    height: auto;
+    width: 100%;
+}
 /*----------|----------|----------|----------|----------|----------|     Footer     |----------|----------|----------|----------|----------|----------|----------*/
 footer {
     background-color: #F2F2F2;
