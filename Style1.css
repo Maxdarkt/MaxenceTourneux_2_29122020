@@ -9,15 +9,9 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Raleway', Arial, sans-serif;
-}
-
-#Conteneur_Global {
-    width: 1000px;
-    margin: auto;
     font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
+    margin : 0 0 0 0;
 }
 
 section {
@@ -25,13 +19,14 @@ section {
 }
 /*----------|----------|----------|----------|----------|----------|     En-tête      |----------|----------|----------|----------|----------|----------|----------*/
 header {
-    min-width: 60%;
-    width: 100%;
+    width: 98%;
+    margin-left:1%;
+    margin-right:1%
 }
 
 /*------------------------------|    Menu en Haut logo + Hebergement | Activites | S'inscrire     |------------------------------*/
 
-#Conteneur_menu {   /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
+#Conteneur_menu { /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -44,12 +39,7 @@ nav ul {            /*Menu 1 en haut à droite : Suppression des listes à puces
 
 nav li {
     margin-right: 15px;
-    margin-top: 10px;
     padding-top : 10px;
-}
-
-header h3, p{
-    margin : 5px;
 }
 
 header p {
@@ -58,7 +48,7 @@ header p {
 
 nav a {
     text-decoration: none;
-    color: rgb(128,128,128);;
+    color: rgb(128,128,128);
 }
 
 nav a:hover, a:focus {
@@ -70,29 +60,33 @@ nav a:hover, a:focus {
 #barre_rechercher { /*Barre de recherche : Flex pour aligner les 3 éléments*/
     display: flex;
     justify-content: start;
+    height : 25px;
 }
 
 
-#barre_rechercher i {   /*Barre de recherche : placement de l'icone localisation*/
-    width: 25px;
-    position: relative;
-    top: 4px;
-    left: 8px;
+#barre_rechercher i { /*Barre de recherche : placement de l'icone localisation*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 100%;
 }
 
-#barre_rechercher input, label {    /*Barre de recherche : hauteur et marges*/
-    height: 25px;
-    margin: 0px 0px 0px 0px;
+
+#barre_rechercher input { /*Barre de recherche : hauteur et marges*/
+    height: 100%;
+    border: none;
 }
 
 .bouton_envoi { /*Barre de recherche : Class pour gérer le bouton "Rechercher"*/
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
-    font-size: 1em;
-    text-align: center;
     color: white;
     text-decoration: none;
     border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .border { /*Barre de recherche : Class pour gérer la bordure du champ de recherche*/
@@ -102,54 +96,54 @@ nav a:hover, a:focus {
 .arrondi_gauche { /*Barre de recherche : Class pour gérer le fond de l'icone localisation*/
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
+    width : 3%;
 }
 
 /*------------------------------|    Menu Filtre     |------------------------------*/
 
-#Filtres ul {                       /*Barre de Filtres : Gestion Flex*/
-    list-style-type: none;
+#Filtres {                       /*Barre de Filtres : Gestion Flex*/
     display: flex;
     justify-content: start;
-    margin-top: 10px;
-    padding: 0px;
+    align-items : center;
+    margin-top:1%;
 }
 
-#Filtres li {
-    padding-top: 5px;
-    padding-right:10px;
+#Titre_Filtre {
+    flex: 0.05;
 }
 
-#Filtres i {
-    position: relative;
-    top: 8px;
-    height: 25px;
-    width: 25px;
+#barre_filtres {
+    flex:0.3;
+    display:flex;
+    justify-content : space-between;
+    height :25px;
+}
+
+
+#Bouton_filtre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px 25px 25px 25px;
+}
+
+#Bouton_filtre p:last-child{
+    margin-right:15px;
+}
+
+#Bouton_filtre i {
     color: #0065FC;
 }
 
-#Filtres span {
-    text-align: center;
-}
-
-.border_1 {
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-    border-right: 1px solid #F2F2F2;
-    border-left: 1px solid #F2F2F2;
-    border-radius: 25px 25px 25px 25px;
-    vertical-align: middle;
-    padding-left: 35px;
-}
-
 .bulle {
-    position: relative;
-    top: 0px;
-    left: 35px;
-    height: 35px;
-    width: 35px;
-    border-radius: 25px 25px 25px 25px;
     background-color: #F2F2F2;
-    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    justify-content : center;
+    align-items: center;
 }
 
 /*------------------------------|    Menu Filtre     |------------------------------*/
@@ -177,148 +171,200 @@ nav a:hover, a:focus {
 }
 /*----------|----------|----------|----------|----------|----------|     Hebergement      |----------|----------|----------|----------|----------|----------|----------*/
 #Hebergement {
-    min-width: 60%;
-    min-height: 350px;
-    width: 100%;
     display: flex;
-    padding : 1%;
+    justify-content: space-between;
+    height: 500px;
+    width:98%;
+    margin-left: 1%;
+    margin-right: 1%
 }
 
 article {
-    width: 70%;
-    padding-left: 2%;
-    padding-right: 2%;
+    flex : 0.695;
     border-radius: 15px;
     background-color: #F2F2F2;
-    margin-right: 5px;
 }
 
 article h3{
     margin-top:10px;
+    text-indent : 2%;
 }
 
 #Annonces1 {
-    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
+    height:86%;
 }
 
 #Bloc_1 {
-    height: 170px;
     width: 30%;
+    height: 47%;
     background-color: white;
     border-radius: 15px;
     border: 2px solid white;
-    margin-bottom:20px;
-}
-
-#Image_bloc_1 {
-    height: 120px;
-    border-radius: 15px 15px 0px 0px;
     overflow: hidden;
 }
 
-.resize_width { /*Redimensionnement img par défaut*/
-    height: auto;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.resize_height { /*Redimensionnement image pour img 5*/
-    height: 100%;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #Legende_1 {
-    height: 50px;
-    margin-right: 5%;
-    margin-left: 5%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left:10px;
 }
 
 #Legende_1 h6 {
-    margin: 0 0 0 0;
+    margin-top: 3px;
+    margin-bottom: 0px;
 }
 
 #Legende_1 p {
     font-size: 0.5em;
-    margin: 1 0 0 0;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
 #Legende_1 i {
-    height: 8px;
     color: #0065FC;
+
+}
+/*----------Hebergement gestion des images-------------------------------*/
+#Image_bloc_1 {
+    background-image: url('Images/hebergements/4_small/Auberge_lacannebiere.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-color: turquoise;
+    height: 75%;
+}
+
+#Image_bloc_2 {
+    background-image: url('Images/hebergements/4_small/Hotel_duport.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-color: turquoise;
+    height: 75%;
+}
+
+#Image_bloc_3 {
+    background-image: url('Images/hebergements/4_small/Hotel_lesmouettes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-color: turquoise;
+    height: 75%;
+}
+
+#Image_bloc_4 {
+    background-image: url('Images/hebergements/4_small/Hotel_delamer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-color: turquoise;
+    height: 75%;
+}
+
+#Image_bloc_5 {
+    background-image: url('Images/hebergements/4_small/Auberge_lepanier.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-color: turquoise;
+    height: 75%;
+}
+
+#Image_bloc_6 {
+    background-image: url('Images/hebergements/4_small/Hotel_amina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    background-color: turquoise;
+    height: 75%;
 }
 
 /*----------|----------|----------|----------|----------|----------|     Populaires      |----------|----------|----------|----------|----------|----------|----------*/
 aside {
+    flex:0.295;
     background-color: white;
-    width: 30%;
-    padding-left: 2%;
-    padding-right: 2%;
     border-radius: 15px;
     background-color: #F2F2F2;
-    margin-left: 5px;
 }
 
 #Populaire {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: 10px 0px 0px 0px;
+    align-items: center;
+    height:45px;
 }
 
-#Populaire h3 {
-    margin-top:0px;
+aside h3 {
+    text-indent : 3%;
+    flex:1;
 }
-
 
 #Annonces2 {
     padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height:86%;
 }
 
-#Bloc_2 {
-    height: 100px;
+#Pop_2 {
+    height: 120px;
     width: 100%;
     background-color: white;
     border-radius: 15px;
     border: 2px solid white;
-    margin-bottom: 20px;
     display:flex;
 }
 
-#Image_bloc_2 {
+#Image_pop_1 {
     height: 100%;
-    width: 170px;
+    width: 50%;
+    background-image: url('Images/hebergements/4_small/Lesoleildumatin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
 }
 
-/*
-#Bloc_2 img {
+#Image_pop_2 {
     height: 100%;
-    width: auto;
-}*/
-
-.resize_width_pop {
-    height: auto;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    background-image: url('Images/hebergements/4_small/Aucoeurdeleau.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0px 0px 15px;
+    overflow: hidden;
 }
 
-.resize_height_pop { 
+#Image_pop_3 {
     height: 100%;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    background-image: url('Images/hebergements/4_small/Toutbleuetblanc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0px 0px 15px;
+    overflow: hidden;
 }
 
 #Legende_2 {
@@ -349,203 +395,177 @@ aside {
 /*----------|----------|----------|----------|----------|----------|     Activites     |----------|----------|----------|----------|----------|----------|----------*/
 
 #Activites {
-    background-color: cornflowerblue;
-    min-width: 60%;
-    height: 300px;
-    width: 100%;
-    display:flex;
-    justify-content : space-between;
+    height: 500px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%
 }
 
+#Ancre_Activites h3 {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%
+}
 
-/*------------------------------------------------------Div + Flexbox pour créer les 4 colonnes-------------------------------------------------------------------------------------*/
-
+    /*------------------------------------------------------Div + Flexbox pour créer les 4 colonnes-------------------------------------------------------------------------------------*/
 .bloc_3:nth-child(1) { /*Colonne 1*/
-    background-color: blue;
-    flex: 0.8;
-    margin-right: 1%;
+    flex: 0.24;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
 }
-
-
-/*
-.bloc_3:nth-child(1) div { /*Réglage de l'image en fond d'écran du div*//*
-    background-size: cover;
-    background-image: url(Images/activites/1_xlarge/Vieux_port.jpg);
-    height: 90%;
-    width: auto;
-    border-radius: 15px 15px 0px 0px;
-}
-*/
 
 .bloc_3:nth-child(2) { /*Conteneur de la colonne 2*/
-    background-color: orange;
-    flex: 0.8;
-    margin-left: 1%;
-    margin-right: 1%;
+    flex: 0.24;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 .bloc_3:nth-child(3) { /*Colonne 3*/
-    background-color: red;
-    flex: 0.8;
-    margin-left: 1%;
-    margin-right: 1%;
+    flex: 0.24;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
 }
-
-/*
-.bloc_3:nth-child(3) div { /*Réglage de l'image en fond d'écran du div*//*
-    background-size: cover;
-    background-image: url(Images/activites/1_xlarge/Parc_calanques.jpg);
-    height: 90%;
-    width: auto;
-    border-radius: 15px 15px 0px 0px;
-}*/
 
 .bloc_3:nth-child(4) { /*Conteneur de la colonne 4*/
-    background-color: mediumpurple;
-    flex: 0.8;
-    margin-left: 1%;
+    flex: 0.24;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*---------------------Div intérieur des Colonnes 2 et 4-----------------------------------------------*/
+
+.int_1:nth-child(1) {
+    flex: 0.54;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
 }
 
-/* Div secondaire*/
-.int_1:nth-child(1) { /*Colonne 2 : enfant 1 60 %*/
-    flex: 0.6;
-    background-color: saddlebrown;
-    border-radius: 15px;
-    margin: 0% 0% 4% 0%;
+.int_1:nth-child(2) {
+    flex: 0.44;
     overflow: hidden;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
 }
 
-/*
-.int_1:nth-child(1) div { /*Réglage de l'image en fond d'écran du div - Colonne 2*//*
+.int_2:nth-child(1) {
+    flex: 0.49;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.int_2:nth-child(2) {
+    flex: 0.49;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+/*---------------------Réglage des images dans les colonnes--------------------------------------------*/
+
+#Image_bloc_3_colonne1 { /*Réglage de l'image en fond d'écran du div----------1*/
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Vieux_port.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 89%;
+    width: auto;
+}
+
+#Image_bloc_3_colonne2-1 { /*Réglage de l'image en fond d'écran du div----------2-1*/
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Port_pomegues.jpg);
-    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 84%;
     width: auto;
-    border-radius: 15px 15px 0px 0px;
-}*/
-
-.int_1:nth-child(2) { /*Colonne 2 : enfant 2 40 %*/
-    flex: 0.4;
-    background-color: orangered;
-    border-radius: 15px;
-    margin: 4% 0% 0% 0%;
-    overflow: hidden;
 }
 
-/*
-.int_1:nth-child(2) div {
+#Image_bloc_3_colonne2-2 { /*Réglage de l'image en fond d'écran du div----------2-2*/
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Iles_Frioul.jpg);
-    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 81%;
     width: auto;
-    border-radius: 15px 15px 0px 0px;
-}*/
-
-
-.int_2:nth-child(1) { /*Colonne 4 : enfant 1 50 %*/
-    flex: 0.5;
-    background-color: purple;
-    border-radius: 15px;
-    margin: 0% 0% 4% 0%;
-    overflow: hidden;
 }
 
-/*
-.int_2:nth-child(1) div {
+#Image_bloc_3_colonne3 { /*Réglage de l'image en fond d'écran du div----------3*/
+    background-size: cover;
+    background-image: url(Images/activites/1_xlarge/Parc_calanques.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 89%;
+    width: auto;
+}
+
+#Image_bloc_3_colonne4-1 { /*Réglage de l'image en fond d'écran du div----------4-1*/
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Notre_dame_de_la_garde.jpg);
-    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 82%;
     width: auto;
-    border-radius: 15px 15px 0px 0px;
-}*/
-
-.int_2:nth-child(2) { /*Colonne 4 : enfant 1 50 %*/
-    flex: 0.5;
-    background-color: rebeccapurple;
-    border-radius: 15px;
-    margin: 4% 0% 0% 0%;
-    overflow: hidden;
 }
-/*
-.int_2:nth-child(2) div {
+
+#Image_bloc_3_colonne4-2 { /*Réglage de l'image en fond d'écran du div----------4-2*/
     background-size: cover;
     background-image: url(Images/activites/1_xlarge/Parc_longchamp.jpg);
-    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 82%;
     width: auto;
-    border-radius: 15px 15px 0px 0px;
-}*/
+}
 
 /*-------------------------------------------------------Création des DIV à l'intérieur des Bloc ----------------------------------------------------------------*/
 
-#Image_bloc_3_colonne { /*Réglage Image + légende des colonnes 1 et 3*/
-    flex: 1;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-}
-
 #Legende_3 {
-    height:40px;
-    position :relative;
-    top : -10px;
-    left : 15px;
+    height:auto;
+    margin-left:2%;
 }
 
-#Image_bloc_3_colonne img {
-height: 100%;
-width: auto;
-}
 
-#Image_bloc_3_colonne2-1 { /*Réglage Image + légende de l'enfant 1 de la colonne 2*/
-    height : 130px;
-    background-color: #F2F2F2;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-}
-
-#Image_bloc_3_colonne2-1 img {
-    height: auto;
-    width: 100%;
-}
-
-#Image_bloc_3_colonne2-2 { /*Réglage Image + légende de l'enfant 2 de la colonne 2*/
-    height: 60px;
-    background-color: #F2F2F2;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-}
-
-#Image_bloc_3_colonne2-2 img {
-    height: auto;
-    width: 100%;
-}
 /*----------|----------|----------|----------|----------|----------|     Footer     |----------|----------|----------|----------|----------|----------|----------*/
 footer {
+    margin-top:3%;
     background-color: #F2F2F2;
     display: flex;
+    width:100%;
 }
 footer h5{
     margin-bottom: 10px;
 }
-
 
 footer div:nth-child(1) {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-left:1%;
 }
 
 footer div:nth-child(2) {

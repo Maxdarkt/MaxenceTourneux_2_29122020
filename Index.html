@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div id="Conteneur_Global">
+    
         <!------------------------ Header ------------------------------------------------>
         <header>
             <div id="Conteneur_menu">
@@ -24,27 +24,28 @@
                     </ul>
                 </nav>
             </div>
+            <div>
+                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
 
-            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-            <p>En plein centre ville ou en pleine nature</p>
-            
             <div id="barre_rechercher">
                    
-                     <div class="arrondi_gauche"><form action="#" method="post"><label for="recherche"><i class="fas fa-map-marker-alt"></i></label></div>
-                        <div><input class="border" type="search" name="search" value="Marseille, France" id="recherche" /></div>
-                        <div><input class="bouton_envoi" type="button" name="envoi" value="Rechercher" /></form></div>
-                    
+                     <div class="arrondi_gauche"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="border"><input type="search" name="search" value="Marseille, France" id="recherche" /></div>
+                     <div class="bouton_envoi"><p>Rechercher</p></div>
+                
             </div>
 
             <div id="Filtres">
                 
-                <ul>
-                    <li>Filtres</li>
-                    <span class="bulle"><i class="fas fa-money-bill-wave"></i></span><li class="border_1">Economique</li>
-                    <span class="bulle"><i class="fas fa-child"></i></span><li class="border_1">Familial</li>
-                    <span class="bulle"><i class="fas fa-heart"></i></span><li class="border_1">Romantique</li>
-                    <span class="bulle"><i class="fas fa-dog"></i></span><li class="border_1">Animaux autorisés</li>
-                </ul>
+                <div id="Titre_Filtre"><p>Filtres</p></div>
+                <div id="barre_filtres">
+                    <div id="Bouton_filtre"><p class="bulle"><i class="fas fa-money-bill-wave"></i></p><p> Economique</p></div>
+                    <div id="Bouton_filtre"><p class="bulle"><i class="fas fa-child"></i></p><p class="border_1"> Familial</p></div>
+                    <div id="Bouton_filtre"><p class="bulle"><i class="fas fa-heart"></i></p><p class="border_1"> Romantique</p></div>
+                    <div id="Bouton_filtre"><p class="bulle"><i class="fas fa-dog"></i></p><p class="border_1"> Animaux autorisés</p></div>
+                </div>
             </div>
 
             <div id="infos">
@@ -53,18 +54,30 @@
             
         </header>
 
-        <!------------------------ Sections ------------------------------------------------------------------------------------------------------------------------------------------------>
+        <!----------------------------- Sections Hebergement + Activites--------------------------------------------------------------------------------------------------------------------->
         <section id="Hebergement">
             <!------------------------ Partie Hebergement = 6 Blocs ------------------------------------------------------------------------------------------------------------------------->
             <article>
-                <h3>Hébergement à Marseille</h3>
+                <div> <h3>Hébergement à Marseille</h3></div>
+               
 
                 <div id="Annonces1">
+
+                    <!--
+                        <img src="Images/hebergements/4_small/Auberge_lacannebiere.jpg" alt="Hotel la cannebière" />
+                        <img class="resize_width" src="Images/hebergements/4_small/Hotel_duport.jpg" alt="Hotel du port" />
+                        <img class="resize_width" src="Images/hebergements/4_small/Hotel_lesmouettes.jpg" alt="Hôtel Les mouettes" />
+                        <img class="resize_width" src="Images/hebergements/4_small/Hotel_delamer.jpg" alt="Hôtel de la mer" />
+                        <img class="resize_width" src="Images/hebergements/4_small/Hotel_amina.jpg" alt="Hôtel chez Amina" />
+
+
+
+                    -->
 
                     <div id="Bloc_1">
                         <!------------------------ Bloc 1 ------------------------------------------------>
                         <div id="Image_bloc_1">
-                            <img class="resize_width" src="Images/hebergements/4_small/Auberge_lacannebiere.jpg" alt="Hotel la cannebière" />
+
                         </div>
                         <div id="Legende_1">
                             <h6>Auberge la Cannebière</h6>
@@ -81,8 +94,8 @@
 
                     <div id="Bloc_1">
                         <!------------------------ Bloc 2 ------------------------------------------------>
-                        <div id="Image_bloc_1">
-                            <img class="resize_width" src="Images/hebergements/4_small/Hotel_duport.jpg" alt="Hotel du port" />
+                        <div id="Image_bloc_2">
+
                         </div>
                         <div id="Legende_1">
                             <h6>Hôtel du port</h6>
@@ -99,8 +112,8 @@
 
                     <div id="Bloc_1">
                         <!------------------------ Bloc 3 ------------------------------------------------>
-                        <div id="Image_bloc_1">
-                            <img class="resize_width" src="Images/hebergements/4_small/Hotel_lesmouettes.jpg" alt="Hôtel Les mouettes" />
+                        <div id="Image_bloc_3">
+
                         </div>
                         <div id="Legende_1">
                             <h6>Hôtel Les mouettes</h6>
@@ -118,8 +131,8 @@
 
                     <div id="Bloc_1">
                         <!------------------------ Bloc 4 ------------------------------------------------>
-                        <div id="Image_bloc_1">
-                            <img class="resize_width" src="Images/hebergements/4_small/Hotel_delamer.jpg" alt="Hôtel de la mer"/>
+                        <div id="Image_bloc_4">
+
                         </div>
                         <div id="Legende_1">
                             <h6>Hôtel de la mer</h6>
@@ -137,8 +150,8 @@
 
                     <div id="Bloc_1">
                         <!------------------------ Bloc 5 ------------------------------------------------>
-                        <div id="Image_bloc_1">
-                            <img class="resize_height" src="Images/hebergements/4_small/Auberge_lepanier.jpg" alt="Auberge Le Panier" />
+                        <div id="Image_bloc_5">
+
                         </div>
                         <div id="Legende_1">
                             <h6>Auberge Le Panier</h6>
@@ -156,8 +169,8 @@
 
                     <div id="Bloc_1">
                         <!------------------------ Bloc 6 ------------------------------------------------>
-                        <div id="Image_bloc_1">
-                            <img class="resize_width" src="Images/hebergements/4_small/Hotel_amina.jpg" alt="Hôtel chez Amina" />
+                        <div id="Image_bloc_6">
+
                         </div>
                         <div id="Legende_1">
                             <h6>Hôtel chez Amina</h6>
@@ -184,10 +197,10 @@
 
                 </div>
                 <div id="Annonces2">
-                    <div id="Bloc_2">
-                        <!------------------------ Bloc 1 ------------------------------------------------>
-                        <div id="Image_bloc_2">
-                            <img class="resize_width_pop" src="Images/hebergements/4_small/Lesoleildumatin.jpg" alt="Hôtel Le soleil du matin" />
+                    <div id="Pop_2">
+                        <!------------------------ POP 1 ------------------------------------------------>
+                        <div id="Image_pop_1">
+
                         </div>
                         <div id="Legende_2">
                             <div>
@@ -205,10 +218,10 @@
                         </div>
                     </div>
 
-                    <div id="Bloc_2">
-                        <!------------------------ Bloc 2 ------------------------------------------------>
-                        <div id="Image_bloc_2">
-                            <img class="resize_width_pop" src="Images/hebergements/4_small/Aucoeurdeleau.jpg" alt="Au coeur de l'eau Chambres d'Hôtes" />
+                    <div id="Pop_2">
+                        <!------------------------ POP 2 ------------------------------------------------>
+                        <div id="Image_pop_2">
+
                         </div>
                         <div id="Legende_2">
                             <div>
@@ -226,10 +239,10 @@
                         </div>
                     </div>
 
-                    <div id="Bloc_2">
-                        <!------------------------ Bloc 3 ------------------------------------------------>
-                        <div id="Image_bloc_2">
-                            <img class="resize_width_pop" src="Images/hebergements/4_small/Toutbleuetblanc.jpg" alt="Hôtel Tout bleu et Blanc" />
+                    <div id="Pop_2">
+                        <!------------------------ POP 3 ------------------------------------------------>
+                        <div id="Image_pop_3">
+
                         </div>
                         <div id="Legende_2">
                             <div>
@@ -257,51 +270,59 @@
         <section id="Ancre_Activites">
             <h3>Activités à Marseille</h3>
             <section id="Activites">
-                <section class="bloc_3"><!------------------------ colonne 1 ------------------------------------------------>
+                <section class="bloc_3">
+                    <!------------------------ colonne 1 ------------------------------------------------>
+                    <!--
+                    <img src="Images/activites/4_small/Vieux_port.jpg" alt="Vieux Port" />
+                    <img src="Images/activites/4_small/Port_pomegues.jpg" alt="Fort de Pomègues" />
+                    <img src="Images/activites/4_small/Parc_calanques.jpg" alt="Parc National des Calanques" />
+                    <img src="Images/activites/4_small/Notre_dame_de_la_garde.jpg" alt="Notre Dame de la garde" />
+                    <img src="Images/activites/4_small/Parc_longchamp.jpg" alt="Parc Longchamp" />
 
-                    <div id="Image_bloc_3_colonne"><img src="Images/activites/4_small/Vieux_port.jpg" alt="Vieux Port" /></div>
+    -->
+
+                    <div id="Image_bloc_3_colonne1"></div>
                     <div id="Legende_3"><h5>Vieux Port</h5></div>
-                    
+
                 </section>
 
                 <section class="bloc_3"><!------------------------ colonne 2 ------------------------------------------------>
 
                     <div class="int_1">
-                        <div id="Image_bloc_3_colonne2-1"><p>blabla</p></div>
-                        <!--<img src="Images/activites/4_small/Port_pomegues.jpg" alt="Fort de Pomègues" />-->
-                        <h5>Fort de Pomègues</h5>
+                        <div id="Image_bloc_3_colonne2-1"></div>
+                        <div id="Legende_3"><h5>Fort de Pomègues</h5></div>
+                        
 
                     </div>
                     <div class="int_1">
-                        <div id="Image_bloc_3_colonne2-2"><img src="Images/activites/4_small/Iles_Frioul.jpg" alt="Iles de Fioul" /></div>
-                        <div><h5>Iles de Fioul</h5></div>
+
+                        <div id="Image_bloc_3_colonne2-2"></div>
+                        <div id="Legende_3"><h5>Iles de Fioul</h5></div>
 
                     </div>
 
                 </section>
                 <section class="bloc_3"><!------------------------ colonne 3 ------------------------------------------------>
 
-                    <div id="Image_bloc_3_colonne"><img src="Images/activites/4_small/Parc_calanques.jpg" alt="Parc National des Calanques" /></div>
+                    <div id="Image_bloc_3_colonne3"></div>
                     <div id="Legende_3"><h5>Parc National des Calanques</h5></div>
 
-</section>
+                </section>
 
                 <section class="bloc_3"><!------------------------ colonne 4 ------------------------------------------------>
 
                     <div class="int_2">
                         
-                        <div id="Image_bloc_3_colonne4"><img src="Images/activites/4_small/Notre_dame_de_la_garde.jpg" alt="Notre Dame de la garde" /></div>
+                        <div id="Image_bloc_3_colonne4-1"></div>
                         <div id="Legende_3"><h5>Notre Dame de la garde</h5></div>
 
                         </div>
 
                     <div class="int_2">
 
-                        <!--<img src="Images/activites/4_small/Parc_longchamp.jpg" alt="Parc Longchamp" />-->
-
-                        <div></div>
-                        <h5>Parc Longchamp</h5>
-
+                        <div id="Image_bloc_3_colonne4-2"></div>
+                        <div id="Legende_3"><h5>Parc Longchamp</h5></div>
+                        
                     </div>
 
                 </section>
@@ -331,7 +352,5 @@
         </footer>
 
 
-
-    </div>
 </body>
 </html>
