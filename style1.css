@@ -9,9 +9,14 @@
 }
 
 body {
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: 'Raleway', Arial, sans-serif;
     margin : 0 0 0 0;
+}
+
+input {
+    font-size: 0.8em;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
 section {
@@ -28,39 +33,68 @@ header {
 
 #Conteneur_menu { /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content:space-between;
+    align-items:center;
 }
 
-nav ul {            /*Menu 1 en haut à droite : Suppression des listes à puces*/
+#logo{
+
+}
+
+header ul {            /*Menu 1 en haut à droite : Suppression des listes à puces*/
     list-style-type: none;
     display: flex;
+    justify-content:space-around;
+    padding:0;
 }
 
-nav li {
-    margin-right: 15px;
-    padding-top : 10px;
+header li {
+    justify-content : space-around;
 }
 
 header p {
     font-size: 0.8em;
 }
 
-nav a {
+#menu_1 {
+    display: flex;
+    align-items: center;
+}
+
+#menu_1 li, #menu_1 p {
+    margin-left:15px;
+}
+
+#menu_1 ul{
+    display: flex;
+    align-items: center;
+    width:68%;
+}
+#menu_1 a {
     text-decoration: none;
     color: rgb(128,128,128);
 }
 
-nav a:hover, a:focus {
-    text-decoration : overline;
+#menu_1 a:hover,#menu_1 a:focus {
+    text-decoration: overline;
     color: #0065FC;
+}
+
+#inscription p:hover, #inscription p:focus {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+#inscription a {
+    text-decoration: none;
+    color: rgb(128,128,128);
+    font-size:1.3em;
 }
 
 /*------------------------------|    Menu Barre de Recherche     |------------------------------*/
 #barre_rechercher { /*Barre de recherche : Flex pour aligner les 3 éléments*/
     display: flex;
     justify-content: start;
-    height : 25px;
+    height : 30px;
 }
 
 
@@ -77,7 +111,7 @@ nav a:hover, a:focus {
     border: none;
 }
 
-.bouton_envoi { /*Barre de recherche : Class pour gérer le bouton "Rechercher"*/
+.bouton_envoi_1 { /*Barre de recherche : Class pour gérer le bouton "Rechercher"*/
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
     color: white;
@@ -96,7 +130,11 @@ nav a:hover, a:focus {
 .arrondi_gauche { /*Barre de recherche : Class pour gérer le fond de l'icone localisation*/
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
-    width : 3%;
+    width : 35px;
+}
+
+.bouton_envoi_2{
+    display:none;
 }
 
 /*------------------------------|    Menu Filtre     |------------------------------*/
@@ -113,34 +151,45 @@ nav a:hover, a:focus {
 }
 
 #barre_filtres {
-    flex:0.3;
     display:flex;
     justify-content : space-between;
-    height :25px;
 }
 
 
-#Bouton_filtre {
+.Bouton_filtre {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #F2F2F2;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 35px 35px 35px 35px;
+    height: 35px;
+    margin-left: 15px;
 }
 
-#Bouton_filtre p:last-child{
+.Bouton_filtre a, .Bouton_filtre a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.Bouton_filtre a:hover, .Bouton_filtre a:focus {
+    text-decoration: none;
+    font-weight:bold;
+    color: #0065FC;
+}
+
+.Bouton_filtre p:last-child{
     margin-right:15px;
 }
 
-#Bouton_filtre i {
+.Bouton_filtre i {
     color: #0065FC;
 }
 
 .bulle {
     background-color: #F2F2F2;
-    width: 25px;
-    height: 25px;
-    border-radius: 25px 25px 25px 25px;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px 35px 35px 35px;
     display:flex;
     justify-content : center;
     align-items: center;
@@ -173,7 +222,7 @@ nav a:hover, a:focus {
 #Hebergement {
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 800px;
     width:98%;
     margin-left: 1%;
     margin-right: 1%
@@ -198,7 +247,7 @@ article h3{
     height:86%;
 }
 
-#Bloc_1 {
+.Bloc_1 {
     width: 30%;
     height: 47%;
     background-color: white;
@@ -207,7 +256,7 @@ article h3{
     overflow: hidden;
 }
 
-#Legende_1 {
+.Legende_1 {
     height: 25%;
     display: flex;
     flex-direction: column;
@@ -215,18 +264,18 @@ article h3{
     margin-left:10px;
 }
 
-#Legende_1 h6 {
+.Legende_1 h6 {
     margin-top: 3px;
     margin-bottom: 0px;
 }
 
-#Legende_1 p {
+.Legende_1 p {
     font-size: 0.5em;
     margin-bottom: 2px;
     margin-top: 2px;
 }
 
-#Legende_1 i {
+.Legende_1 i {
     color: #0065FC;
 
 }
@@ -239,7 +288,13 @@ article h3{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     background-color: turquoise;
-    height: 75%;
+    height: 80%;
+}
+
+.lien {
+    display:block;
+    width:100%;
+    height:100%;
 }
 
 #Image_bloc_2 {
@@ -250,7 +305,7 @@ article h3{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     background-color: turquoise;
-    height: 75%;
+    height: 80%;
 }
 
 #Image_bloc_3 {
@@ -261,7 +316,7 @@ article h3{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     background-color: turquoise;
-    height: 75%;
+    height: 80%;
 }
 
 #Image_bloc_4 {
@@ -272,7 +327,7 @@ article h3{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     background-color: turquoise;
-    height: 75%;
+    height: 80%;
 }
 
 #Image_bloc_5 {
@@ -283,7 +338,7 @@ article h3{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     background-color: turquoise;
-    height: 75%;
+    height: 80%;
 }
 
 #Image_bloc_6 {
@@ -294,7 +349,7 @@ article h3{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     background-color: turquoise;
-    height: 75%;
+    height: 80%;
 }
 
 /*----------|----------|----------|----------|----------|----------|     Populaires      |----------|----------|----------|----------|----------|----------|----------*/
@@ -325,8 +380,8 @@ aside h3 {
     height:86%;
 }
 
-#Pop_2 {
-    height: 120px;
+.Pop_2 {
+    height: 200px;
     width: 100%;
     background-color: white;
     border-radius: 15px;
@@ -367,7 +422,7 @@ aside h3 {
     overflow: hidden;
 }
 
-#Legende_2 {
+.Legende_2 {
     margin-top: 2%;
     margin-bottom: 2%;
     display:flex;
@@ -378,15 +433,15 @@ aside h3 {
 
 }
 
-    #Legende_2 h6 {
+    .Legende_2 h6 {
         margin: 0 0 0 0;
     }
 
-    #Legende_2 p {
+    .Legende_2 p {
         font-size: 0.5em;
     }
 
-    #Legende_2 i {
+    .Legende_2 i {
         height: 8px;
         color: #0065FC;
     }
@@ -416,7 +471,6 @@ aside h3 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 10px 5px 5px #F2F2F2;
     border-radius: 15px 15px 15px 15px;
 }
@@ -436,7 +490,6 @@ aside h3 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 10px 5px 5px #F2F2F2;
     border-radius: 15px 15px 15px 15px;
 }
@@ -487,12 +540,11 @@ aside h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 89%;
+    height: 91%;
     width: auto;
 }
 
 #Image_bloc_3_colonne2-1 { /*Réglage de l'image en fond d'écran du div----------2-1*/
-    background-size: cover;
     background-image: url(Images/activites/1_xlarge/Port_pomegues.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -517,7 +569,7 @@ aside h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 89%;
+    height: 91%;
     width: auto;
 }
 
@@ -543,11 +595,24 @@ aside h3 {
 
 /*-------------------------------------------------------Création des DIV à l'intérieur des Bloc ----------------------------------------------------------------*/
 
-#Legende_3 {
+.Legende_3 {
     height:auto;
     margin-left:2%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
+.Legende_4 {
+    height:auto;
+    margin-left: 2%;
+    display: flex;
+    align-items: baseline;
+}
+
+.Legende_4 h5, .Legende_3 h5 {
+    margin: 3% 0% 3% 0%;
+}
 
 /*----------|----------|----------|----------|----------|----------|     Footer     |----------|----------|----------|----------|----------|----------|----------*/
 footer {
@@ -555,6 +620,7 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     width:100%;
+    font-size:0.8em;
 }
 footer h5{
     margin-bottom: 10px;
@@ -581,4 +647,250 @@ footer div:nth-child(3) {
     flex-direction: column;
     justify-content: flex-start;
 }
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------Media Queries-----------------------------------------------------------------------------------*/
 
+@media screen and (min-width:980px) and (max-width:1280px) {
+
+    /*-------------------------------------------------Herbergement------------------------------------------------*/
+
+    #Hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    article h3 {
+        text-align: center;
+    }
+
+    #Annonces1 {
+        display: flex;
+        height: auto;
+    }
+
+    .Bloc_1 {
+        width: 400px;
+        height: 300px;
+        margin-left: 1%;
+        margin-right: 1%
+    }
+
+    /*-----------------------------------------------------Populaires---------------------------------------------*/
+    #Populaire {
+        width: 50%;
+        margin: auto;
+    }
+
+    #Annonces2 {
+        height: auto;
+        align-items: center;
+    }
+
+    .Pop_2 {
+        height: 200px;
+        width: 400px;
+    }
+
+    #Image_pop_1, #Image_pop_2, #Image_pop_3 {
+        width: 200px;
+    }
+}
+
+@media all and (max-width:980px) {
+    /*------------------------------------------HEADER-----------------------------------------------------------------------------------*/
+
+    /*------------------------------Menu-------------------------------------------*/
+
+    #Conteneur_menu { /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    #logo {
+        position: absolute;
+        top: 0px;
+    }
+
+    #menu_1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+        #menu_1 ul {
+            width: 100%;
+        }
+
+        #menu_1 a {
+            text-decoration: none;
+            color: rgb(128,128,128);
+            width: 100%;
+        }
+
+        #menu_1 a:hover {
+            text-decoration: none;
+            color: #0065FC;
+        }
+
+        #menu_1 a:focus {
+            color: #0065FC;
+        }
+
+    #inscription a, #inscription a:hover, #inscription a:visited {
+        text-decoration: none;
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    #menu_1 li {
+        width: 50%;
+        text-align: center;
+        border-bottom: 1px solid rgb(128,128,128);
+        margin-left: 0px;
+    }
+
+        #menu_1 li:hover, #menu_1 li:focus {
+            border-bottom: 2px solid #0065FC;
+            color: #0065FC;
+        }
+
+    /*------------------------------------------------Barre rechercher-------------------------------------------*/
+
+    .bouton_envoi_1 {
+        display: none;
+    }
+
+    .bouton_envoi_2 {
+        background-color: #0065FC;
+        border-radius: 0px 10px 10px 0px;
+        color: white;
+        text-decoration: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /*----------------------------------------------Filtres-----------------------------------------------------*/
+
+    #Filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #barre_filtres {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .Bouton_filtre {
+        margin: 0px 10px 10px 0px;
+    }
+
+    /*----------||-------------------------------||------------------------------------------||---------------------*/
+    /*-------------------------------------------------Herbergement------------------------------------------------*/
+
+    #Hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    article h3 {
+        text-align: center;
+    }
+
+    #Annonces1 {
+        display: flex;
+        height: auto;
+    }
+
+    .Bloc_1 {
+        width:400px;
+        height: 300px;
+        margin-left: 1%;
+        margin-right: 1%
+    }
+
+    /*-----------------------------------------------------Populaires---------------------------------------------*/
+    #Populaire {
+        width: 400px;
+        margin: auto;
+    }
+
+    #Annonces2 {
+        height: auto;
+        align-items: center;
+    }
+
+    .Pop_2 {
+        height: 200px;
+        width: 400px;
+    }
+
+    #Image_pop_1, #Image_pop_2, #Image_pop_3 {
+        width: 200px;
+    }
+
+
+
+    /*-----------------------------------------------------Activites a Marseille----------------------------------*/
+
+    #Activites {
+        flex-direction: column;
+        align-items:center;
+        height: auto;
+    }
+
+    #Ancre_Activites h3 {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .bloc_3:nth-child(1) {
+        height: 250px;
+        width:400px;
+    }
+
+
+
+    .bloc_3:nth-child(3) {
+        height: 250px;
+        width: 400px;
+    }
+
+
+    .int_1:nth-child(1) {
+        height: 250px;
+        width: 400px;
+    }
+
+    .int_1:nth-child(2) {
+        height: 250px;
+        width: 400px;
+    }
+
+    .int_2:nth-child(1) {
+        height: 250px;
+        width: 400px;
+    }
+
+    .int_2:nth-child(2) {
+        height: 250px;
+        width: 400px;
+    }
+
+    /*-----------------------------------------------------------Footer----------------------------------------------------*/
+
+    footer {
+        flex-direction: column;
+        padding: 2%;
+    }
+}
