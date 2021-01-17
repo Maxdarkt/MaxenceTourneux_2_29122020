@@ -37,10 +37,6 @@ header {
     align-items:center;
 }
 
-#logo{
-
-}
-
 header ul {            /*Menu 1 en haut à droite : Suppression des listes à puces*/
     list-style-type: none;
     display: flex;
@@ -281,13 +277,12 @@ article h3{
 }
 /*----------Hebergement gestion des images-------------------------------*/
 #Image_bloc_1 {
-    background-image: url('./images/hebergements/4_small/Auberge_lacannebiere.jpg');
+    background-image: url('./images/hebergements/3_medium/Auberge_lacannebiere.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-    background-color: turquoise;
     height: 80%;
 }
 
@@ -298,57 +293,52 @@ article h3{
 }
 
 #Image_bloc_2 {
-    background-image: url('./images/hebergements/4_small/Hotel_duport.jpg');
+    background-image: url('./images/hebergements/3_medium/Hotel_duport.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-    background-color: turquoise;
     height: 80%;
 }
 
 #Image_bloc_3 {
-    background-image: url('./images/hebergements/4_small/Hotel_lesmouettes.jpg');
+    background-image: url('./images/hebergements/3_medium/Hotel_lesmouettes.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-    background-color: turquoise;
     height: 80%;
 }
 
 #Image_bloc_4 {
-    background-image: url('./images/hebergements/4_small/Hotel_delamer.jpg');
+    background-image: url('./images/hebergements/3_medium/Hotel_delamer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-    background-color: turquoise;
     height: 80%;
 }
 
 #Image_bloc_5 {
-    background-image: url('images/hebergements/4_small/Auberge_lepanier.jpg');
+    background-image: url('images/hebergements/3_medium/Auberge_lepanier.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-    background-color: turquoise;
     height: 80%;
 }
 
 #Image_bloc_6 {
-    background-image: url('images/hebergements/4_small/Hotel_amina.jpg');
+    background-image: url('images/hebergements/3_medium/Hotel_amina.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
-    background-color: turquoise;
     height: 80%;
 }
 
@@ -392,7 +382,7 @@ aside h3 {
 #Image_pop_1 {
     height: 100%;
     width: 50%;
-    background-image: url('images/hebergements/4_small/Lesoleildumatin.jpg');
+    background-image: url('images/hebergements/3_medium/Lesoleildumatin.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -403,7 +393,7 @@ aside h3 {
 #Image_pop_2 {
     height: 100%;
     width: 50%;
-    background-image: url('images/hebergements/4_small/Aucoeurdeleau.jpg');
+    background-image: url('images/hebergements/3_medium/Aucoeurdeleau.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -414,7 +404,7 @@ aside h3 {
 #Image_pop_3 {
     height: 100%;
     width: 50%;
-    background-image: url('images/hebergements/4_small/Toutbleuetblanc.jpg');
+    background-image: url('images/hebergements/3_medium/Toutbleuetblanc.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -536,7 +526,7 @@ aside h3 {
 
 #Image_bloc_3_colonne1 { /*Réglage de l'image en fond d'écran du div----------1*/
     background-size: cover;
-    background-image: url('images/activites/1_xlarge/Vieux_port.jpg');
+    background-image: url('images/activites/3_medium/Vieux_port.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -545,7 +535,7 @@ aside h3 {
 }
 
 #Image_bloc_3_colonne2-1 { /*Réglage de l'image en fond d'écran du div----------2-1*/
-    background-image: url('images/activites/1_xlarge/Port_pomegues.jpg');
+    background-image: url('images/activites/3_medium/Port_pomegues.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -555,7 +545,7 @@ aside h3 {
 
 #Image_bloc_3_colonne2-2 { /*Réglage de l'image en fond d'écran du div----------2-2*/
     background-size: cover;
-    background-image: url('images/activites/1_xlarge/Iles_Frioul.jpg');
+    background-image: url('images/activites/3_medium/Iles_Frioul.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -565,7 +555,7 @@ aside h3 {
 
 #Image_bloc_3_colonne3 { /*Réglage de l'image en fond d'écran du div----------3*/
     background-size: cover;
-    background-image: url('images/activites/1_xlarge/Parc_calanques.jpg');
+    background-image: url('images/activites/3_medium/Parc_calanques.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -575,7 +565,7 @@ aside h3 {
 
 #Image_bloc_3_colonne4-1 { /*Réglage de l'image en fond d'écran du div----------4-1*/
     background-size: cover;
-    background-image: url('images/activites/1_xlarge/Notre_dame_de_la_garde.jpg');
+    background-image: url('images/activites/3_medium/Notre_dame_de_la_garde.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -585,7 +575,7 @@ aside h3 {
 
 #Image_bloc_3_colonne4-2 { /*Réglage de l'image en fond d'écran du div----------4-2*/
     background-size: cover;
-    background-image: url('images/activites/1_xlarge/Parc_longchamp.jpg');
+    background-image: url('images/activites/3_medium/Parc_longchamp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
