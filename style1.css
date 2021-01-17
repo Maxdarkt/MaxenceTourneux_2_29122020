@@ -420,7 +420,7 @@ aside h3 {
     justify-content:space-between;
     align-items: start;
     padding-left:2%;
-
+    width:50%;
 }
 
     .Legende_2 h6 {
@@ -685,8 +685,9 @@ footer div:nth-child(3) {
     }
 
     #Image_pop_1, #Image_pop_2, #Image_pop_3 {
-        width: 200px;
+        width: 50%;
     }
+
 }
 
 @media all and (max-width:980px) {
@@ -825,16 +826,12 @@ footer div:nth-child(3) {
     }
 
     #Image_pop_1, #Image_pop_2, #Image_pop_3 {
-        width: 200px;
+        width: 50%;
     }
-
-
-
     /*-----------------------------------------------------Activites a Marseille----------------------------------*/
-
     #Activites {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         height: auto;
     }
 
