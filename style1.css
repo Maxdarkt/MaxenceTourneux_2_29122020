@@ -25,8 +25,7 @@ section {
 /*----------|----------|----------|----------|----------|----------|     En-tête      |----------|----------|----------|----------|----------|----------|----------*/
 header {
     width: 98%;
-    margin-left:1%;
-    margin-right:1%
+    margin: 1% 1% 1% 1%;
 }
 
 /*------------------------------|    Menu en Haut logo + Hebergement | Activites | S'inscrire     |------------------------------*/
@@ -68,7 +67,7 @@ header p {
 }
 #menu_1 a {
     text-decoration: none;
-    color: #9EA2A4;
+    color: grey;
 }
 
 #menu_1 a:hover,#menu_1 a:focus {
@@ -82,7 +81,7 @@ header p {
 }
 #inscription a {
     text-decoration: none;
-    color: #9EA2A4;
+    color: grey;
     font-size: 1.3em;
 }
 
@@ -120,12 +119,12 @@ header p {
 }
 
 .border { /*Barre de recherche : Class pour gérer la bordure du champ de recherche*/
-    border: 1px solid #DBDBDB;
+    border: 1px solid #F2F2F2;
 }
 
 .arrondi_gauche { /*Barre de recherche : Class pour gérer le fond de l'icone localisation*/
     border-radius: 10px 0px 0px 10px;
-    background-color: #DBDBDB;
+    background-color: #F2F2F2;
     width : 35px;
 }
 
@@ -156,7 +155,7 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #DBDBDB;
+    border: 1px solid #F2F2F2;
     border-radius: 35px 35px 35px 35px;
     height: 35px;
     margin-left: 15px;
@@ -177,12 +176,12 @@ header p {
     margin-right:15px;
 }
 
-.Bouton_filtre i {
+.Bouton_filtre i {Ancre_Hebergement
     color: #0065FC;
 }
 
 .bulle {
-    background-color: #DBDBDB;
+    background-color: #F2F2F2;
     width: 35px;
     height: 35px;
     border-radius: 35px 35px 35px 35px;
@@ -211,24 +210,27 @@ header p {
     height: 15px;
     width: 15px;
     border-radius: 15px 15px 15px 15px;
-    border: 1px solid #DBDBDB;
+    border: 1px solid #F2F2F2;
     margin-right: 5px;
 }
 /*----------|----------|----------|----------|----------|----------|     Hebergement      |----------|----------|----------|----------|----------|----------|----------*/
-#Hebergement {
+#Ancre_Hebergement {
     display: flex;
     justify-content: space-between;
-    height: 800px;
-    width:98%;
-    margin-left: 1%;
-    margin-right: 1%
+    width: 98%;
+    height:650px;
+    margin: 1% 1% 1% 1%;
 }
 
 article {
-    flex : 0.695;
+    width: 65%;
+    background-color: #F2F2F2;
     border-radius: 15px;
-    background-color: #DBDBDB;
-    width:100%;
+    padding: 40px;
+}
+
+#Conteneur_article {
+    height:100%;
 }
 
 article h3{
@@ -240,13 +242,13 @@ article h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;
-    height:86%;
+    align-content: space-around;
+    height:80%;
 }
 
 .Bloc_1 {
     width: 30%;
-    height: 47%;
+    height: 200px;
     background-color: white;
     border-radius: 15px;
     border: 2px solid white;
@@ -276,15 +278,17 @@ article h3{
     color: #0065FC;
 
 }
-/*----------Hebergement gestion des images-------------------------------*/
-#Image_bloc_1 {
-    background-image: url('./images/hebergements/3_medium/Auberge_lacannebiere.jpg');
+
+#Plus h4{
+    text-indent:2%;
+}
+/*---------------------------------------------------Hebergement gestion des images-------------------------------*/
+.image_bloc_1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    height: 80%;
+    height: 75%;
 }
 
 .lien {
@@ -293,70 +297,48 @@ article h3{
     height:100%;
 }
 
-#Image_bloc_2 {
+.image_1 {
+    background-image: url('./images/hebergements/3_medium/Auberge_lacannebiere.jpg');
+
+}
+
+.image_2 {
     background-image: url('./images/hebergements/3_medium/Hotel_duport.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    height: 80%;
 }
 
-#Image_bloc_3 {
+.image_3 {
     background-image: url('./images/hebergements/3_medium/Hotel_lesmouettes.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    height: 80%;
 }
 
-#Image_bloc_4 {
+.image_4 {
     background-image: url('./images/hebergements/3_medium/Hotel_delamer.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    height: 80%;
 }
 
-#Image_bloc_5 {
+.image_5 {
     background-image: url('images/hebergements/3_medium/Auberge_lepanier.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    height: 80%;
 }
 
-#Image_bloc_6 {
+.image_6 {
     background-image: url('images/hebergements/3_medium/Hotel_amina.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    height: 80%;
 }
 
 /*----------|----------|----------|----------|----------|----------|     Populaires      |----------|----------|----------|----------|----------|----------|----------*/
 aside {
-    flex:0.295;
-    background-color: white;
     border-radius: 15px;
-    background-color: #DBDBDB;
-    width:100%;
+    background-color: #F2F2F2;
+    width:22%;
+    padding:40px;
+}
+
+#Conteneur_aside {
+    height:100%;
 }
 
 #Populaire {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:45px;
+    height: 45px;
 }
 
 aside h3 {
@@ -365,15 +347,14 @@ aside h3 {
 }
 
 #Annonces2 {
-    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height:86%;
+    height:95%;
 }
 
 .Pop_2 {
-    height: 200px;
+    height: 145px;
     width: 100%;
     background-color: white;
     border-radius: 15px;
@@ -381,37 +362,24 @@ aside h3 {
     display:flex;
 }
 
-#Image_pop_1 {
+.image_pop {
     height: 100%;
-    width: 50%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0px 0px 15px;
+}
+.image_pop_1 {
     background-image: url('images/hebergements/3_medium/Lesoleildumatin.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 0px 0px 15px;
-    overflow: hidden;
 }
 
-#Image_pop_2 {
-    height: 100%;
-    width: 50%;
+.image_pop_2 {
     background-image: url('images/hebergements/3_medium/Aucoeurdeleau.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 0px 0px 15px;
-    overflow: hidden;
 }
 
-#Image_pop_3 {
-    height: 100%;
-    width: 50%;
+.image_pop_3 {
     background-image: url('images/hebergements/3_medium/Toutbleuetblanc.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 0px 0px 15px;
-    overflow: hidden;
 }
 
 .Legende_2 {
@@ -441,148 +409,103 @@ aside h3 {
 
 /*----------|----------|----------|----------|----------|----------|     Activites     |----------|----------|----------|----------|----------|----------|----------*/
 
-#Activites {
-    height: 500px;
+#Ancre_Activites {
     width: 98%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 1%
+    margin : 1% 1% 1% 1%;
 }
 
-#Ancre_Activites h3 {
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%
+#Activites {
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
 }
+
 
     /*------------------------------------------------------Div + Flexbox pour créer les 4 colonnes-------------------------------------------------------------------------------------*/
-.bloc_3:nth-child(1) { /*Colonne 1*/
-    flex: 0.24;
-    border-radius: 15px;
-    overflow: hidden;
+.bloc_3 { /*Colonnes*/
+    width: 24%;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 5px 5px #DBDBDB;
     border-radius: 15px 15px 15px 15px;
+
 }
 
-.bloc_3:nth-child(2) { /*Conteneur de la colonne 2*/
-    flex: 0.24;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 15px 15px 15px 15px;
+.bloc_3_shadow {
+    box-shadow: 10px 5px 5px #F2F2F2;
 }
 
-
-.bloc_3:nth-child(3) { /*Colonne 3*/
-    flex: 0.24;
-    border-radius: 15px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 10px 5px 5px #DBDBDB;
-    border-radius: 15px 15px 15px 15px;
-}
-
-.bloc_3:nth-child(4) { /*Conteneur de la colonne 4*/
-    flex: 0.24;
+.bloc_3_col { /*colonne 2 et 4 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px 15px 15px 15px;
 }
-/*---------------------Div intérieur des Colonnes 2 et 4-----------------------------------------------*/
-
-.int_1:nth-child(1) {
-    flex: 0.5;
-    overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #DBDBDB;
-}
-
-.int_1:nth-child(2) {
-    flex: 0.4;
-    overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #DBDBDB;
-}
-
-.int_2:nth-child(1) {
-    flex: 0.45;
-    overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #DBDBDB;
-}
-
-.int_2:nth-child(2) {
-    flex: 0.45;
-    overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #DBDBDB;
-}
-
 
 /*---------------------Réglage des images dans les colonnes--------------------------------------------*/
 
-#Image_bloc_3_colonne1 { /*Réglage de l'image en fond d'écran du div----------1*/
+.image_bloc_3 { /*Réglage générale de la classe image*/
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius:15px 15px 0 0;
+}
+
+.image_bloc_3_H1 {
+    height: 91%;
+}
+
+.image_bloc_3_H2 {
+    height: 70%;
+}
+
+.image_bloc_3_H3 {
+    height: 83%;
+}
+
+.image_bloc_3_H4 {
+    height: 79%;
+}
+
+.int_10 {
+    height: 44%;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.int_11 {
+    height: 54%;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.int_2 {
+    height: 48%;
+    box-shadow: 10px 5px 5px #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.image_bloc_3_img_1 { /*URL des images des blocs 1 -> 6*/
     background-image: url('images/activites/3_medium/Vieux_port.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 91%;
-    width: auto;
 }
 
-#Image_bloc_3_colonne2-1 { /*Réglage de l'image en fond d'écran du div----------2-1*/
+.image_bloc_3_img_2 {
     background-image: url('images/activites/3_medium/Port_pomegues.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 84%;
-    width: auto;
 }
 
-#Image_bloc_3_colonne2-2 { /*Réglage de l'image en fond d'écran du div----------2-2*/
-    background-size: cover;
+.image_bloc_3_img_3 {
     background-image: url('images/activites/3_medium/Iles_Frioul.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 81%;
-    width: auto;
 }
 
-#Image_bloc_3_colonne3 { /*Réglage de l'image en fond d'écran du div----------3*/
-    background-size: cover;
+.image_bloc_3_img_4 {
     background-image: url('images/activites/3_medium/Parc_calanques.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 91%;
-    width: auto;
 }
 
-#Image_bloc_3_colonne4-1 { /*Réglage de l'image en fond d'écran du div----------4-1*/
-    background-size: cover;
+.image_bloc_3_img_5 {
     background-image: url('images/activites/3_medium/Notre_dame_de_la_garde.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 82%;
-    width: auto;
 }
 
-#Image_bloc_3_colonne4-2 { /*Réglage de l'image en fond d'écran du div----------4-2*/
-    background-size: cover;
+.image_bloc_3_img_6 {
     background-image: url('images/activites/3_medium/Parc_longchamp.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 82%;
-    width: auto;
 }
 
 /*-------------------------------------------------------Création des DIV à l'intérieur des Bloc ----------------------------------------------------------------*/
@@ -609,7 +532,7 @@ aside h3 {
 /*----------|----------|----------|----------|----------|----------|     Footer     |----------|----------|----------|----------|----------|----------|----------*/
 footer {
     margin-top:3%;
-    background-color: #DBDBDB;
+    background-color: #F2F2F2;
     display: flex;
     width:100%;
     font-size:0.8em;
@@ -648,11 +571,15 @@ footer div:nth-child(3) {
 
     /*-------------------------------------------------Herbergement------------------------------------------------*/
 
-    #Hebergement {
+    #Ancre_Hebergement {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         height: auto;
+    }
+
+    article{
+        width:70%;
     }
 
     article h3 {
@@ -662,35 +589,36 @@ footer div:nth-child(3) {
     #Annonces1 {
         display: flex;
         align-content: space-around;
-        height: 950px;
     }
 
     .Bloc_1 {
-        width: 400px;
-        height: 300px;
+        width:350px;
         margin-left: 1%;
-        margin-right: 1%
+        margin-right: 1%;
+        margin-bottom:2%;
     }
 
     /*-----------------------------------------------------Populaires---------------------------------------------*/
+    aside{
+        width:70%;
+    }
+
     #Populaire {
-        width: 400px;
+        width: 100%;
         margin: auto;
     }
 
     #Annonces2 {
-        height: 650px;
+        flex-direction:row;
         align-items: center;
         justify-content:space-around;
+        flex-wrap:wrap;
+        height:450px;
     }
 
     .Pop_2 {
         height: 200px;
-        width: 400px;
-    }
-
-    #Image_pop_1, #Image_pop_2, #Image_pop_3 {
-        width: 50%;
+        width: 45%;
     }
 
 }
@@ -702,12 +630,12 @@ footer div:nth-child(3) {
 
     #Conteneur_menu { /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-direction: column;
     }
 
     #logo {
-        position: absolute;
-        top: 0px;
+        width : 100%;
+        height:0;
     }
 
     #menu_1 {
@@ -723,7 +651,6 @@ footer div:nth-child(3) {
 
         #menu_1 a {
             text-decoration: none;
-            color: #DBDBDB;
             width: 100%;
         }
 
@@ -745,7 +672,7 @@ footer div:nth-child(3) {
     #menu_1 li {
         width: 50%;
         text-align: center;
-        border-bottom: 1px solid #DBDBDB;
+        border-bottom: 1px solid #F2F2F2;
         margin-left: 0px;
     }
 
@@ -792,13 +719,16 @@ footer div:nth-child(3) {
     /*----------||-------------------------------||------------------------------------------||---------------------*/
     /*-------------------------------------------------Herbergement------------------------------------------------*/
 
-    #Hebergement {
+    #Ancre_Hebergement {
         display: flex;
         flex-direction: column-reverse;
         align-items:center;
         height: auto;
     }
 
+    article{
+        width:60%;
+    }
     article h3 {
         text-align: center;
     }
@@ -826,6 +756,10 @@ footer div:nth-child(3) {
         margin: auto;
     }
 
+    aside {
+        width: 60%;
+    }
+
     #Annonces2 {
         height: 650px;
         align-items: center;
@@ -836,55 +770,45 @@ footer div:nth-child(3) {
         height: 200px;
         width: 400px;
     }
-
-    #Image_pop_1, #Image_pop_2, #Image_pop_3 {
-        width: 50%;
-    }
     /*-----------------------------------------------------Activites a Marseille----------------------------------*/
-    #Activites {
-        flex-direction: column;
-        align-items: center;
-        height: 1800px;
-    }
-
     #Ancre_Activites h3 {
         width: 400px;
         text-align: center;
         margin: auto;
     }
 
-    .bloc_3:nth-child(1) {
-        height: 250px;
-        width:400px;
+    #Activites {
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        height:1620px;
+        margin-top:20px;
     }
 
-
+    .bloc_3 {
+        height: 250px;
+        width: 400px;
+    }
 
     .bloc_3:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    .int_10, .int_11, .int_2 {
         height: 250px;
         width: 400px;
+        margin-top:20px;
+    }
+
+    .bloc_3_col{
+        height:auto;
+    }
+
+    .image_bloc_3_H1, .image_bloc_3_H2, .image_bloc_3_H3, .image_bloc_3_H4 {
+        height: 80%;
     }
 
 
-    .int_1:nth-child(1) {
-        height: 250px;
-        width: 400px;
-    }
-
-    .int_1:nth-child(2) {
-        height: 250px;
-        width: 400px;
-    }
-
-    .int_2:nth-child(1) {
-        height: 250px;
-        width: 400px;
-    }
-
-    .int_2:nth-child(2) {
-        height: 250px;
-        width: 400px;
-    }
 
     /*-----------------------------------------------------------Footer----------------------------------------------------*/
 
