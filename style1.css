@@ -68,7 +68,7 @@ header p {
 }
 #menu_1 a {
     text-decoration: none;
-    color: rgb(128,128,128);
+    color: #9EA2A4;
 }
 
 #menu_1 a:hover,#menu_1 a:focus {
@@ -82,8 +82,8 @@ header p {
 }
 #inscription a {
     text-decoration: none;
-    color: rgb(128,128,128);
-    font-size:1.3em;
+    color: #9EA2A4;
+    font-size: 1.3em;
 }
 
 /*------------------------------|    Menu Barre de Recherche     |------------------------------*/
@@ -120,12 +120,12 @@ header p {
 }
 
 .border { /*Barre de recherche : Class pour gérer la bordure du champ de recherche*/
-    border: 1px solid #F2F2F2;
+    border: 1px solid #DBDBDB;
 }
 
 .arrondi_gauche { /*Barre de recherche : Class pour gérer le fond de l'icone localisation*/
     border-radius: 10px 0px 0px 10px;
-    background-color: #F2F2F2;
+    background-color: #DBDBDB;
     width : 35px;
 }
 
@@ -156,7 +156,7 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #DBDBDB;
     border-radius: 35px 35px 35px 35px;
     height: 35px;
     margin-left: 15px;
@@ -182,7 +182,7 @@ header p {
 }
 
 .bulle {
-    background-color: #F2F2F2;
+    background-color: #DBDBDB;
     width: 35px;
     height: 35px;
     border-radius: 35px 35px 35px 35px;
@@ -211,7 +211,7 @@ header p {
     height: 15px;
     width: 15px;
     border-radius: 15px 15px 15px 15px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #DBDBDB;
     margin-right: 5px;
 }
 /*----------|----------|----------|----------|----------|----------|     Hebergement      |----------|----------|----------|----------|----------|----------|----------*/
@@ -227,7 +227,7 @@ header p {
 article {
     flex : 0.695;
     border-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: #DBDBDB;
     width:100%;
 }
 
@@ -348,7 +348,7 @@ aside {
     flex:0.295;
     background-color: white;
     border-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: #DBDBDB;
     width:100%;
 }
 
@@ -463,7 +463,7 @@ aside h3 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 5px 5px #F2F2F2;
+    box-shadow: 10px 5px 5px #DBDBDB;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -482,7 +482,7 @@ aside h3 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 5px 5px #F2F2F2;
+    box-shadow: 10px 5px 5px #DBDBDB;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -499,28 +499,28 @@ aside h3 {
     flex: 0.5;
     overflow: hidden;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #F2F2F2;
+    box-shadow: 10px 10px 5px #DBDBDB;
 }
 
 .int_1:nth-child(2) {
     flex: 0.4;
     overflow: hidden;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #F2F2F2;
+    box-shadow: 10px 10px 5px #DBDBDB;
 }
 
 .int_2:nth-child(1) {
     flex: 0.45;
     overflow: hidden;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #F2F2F2;
+    box-shadow: 10px 10px 5px #DBDBDB;
 }
 
 .int_2:nth-child(2) {
     flex: 0.45;
     overflow: hidden;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 10px 10px 5px #F2F2F2;
+    box-shadow: 10px 10px 5px #DBDBDB;
 }
 
 
@@ -609,7 +609,7 @@ aside h3 {
 /*----------|----------|----------|----------|----------|----------|     Footer     |----------|----------|----------|----------|----------|----------|----------*/
 footer {
     margin-top:3%;
-    background-color: #F2F2F2;
+    background-color: #DBDBDB;
     display: flex;
     width:100%;
     font-size:0.8em;
@@ -723,7 +723,7 @@ footer div:nth-child(3) {
 
         #menu_1 a {
             text-decoration: none;
-            color: rgb(128,128,128);
+            color: #DBDBDB;
             width: 100%;
         }
 
@@ -745,7 +745,7 @@ footer div:nth-child(3) {
     #menu_1 li {
         width: 50%;
         text-align: center;
-        border-bottom: 1px solid rgb(128,128,128);
+        border-bottom: 1px solid #DBDBDB;
         margin-left: 0px;
     }
 
