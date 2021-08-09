@@ -1,4 +1,12 @@
 ﻿/*----------|----------|----------|----------|----------|----------|     Généralitées      |----------|----------|----------|----------|----------|----------|----------*/
+@media screen and (min-width:1280px){
+    body{
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url('Police_Raleway/Raleway-VariableFont_wght.eot');
@@ -8,10 +16,9 @@
     font-style: normal;
 }
 
-body {
+html, body {
     font-size: 1.3em;
     font-family: 'Raleway', Arial, sans-serif;
-    margin : 0 0 0 0;
 }
 
 input {
@@ -24,8 +31,7 @@ section {
 }
 /*----------|----------|----------|----------|----------|----------|     En-tête      |----------|----------|----------|----------|----------|----------|----------*/
 header {
-    width: 98%;
-    margin: 1% 1% 1% 1%;
+    width: 100%;
 }
 
 /*------------------------------|    Menu en Haut logo + Hebergement | Activites | S'inscrire     |------------------------------*/
@@ -106,6 +112,7 @@ header p {
 #barre_rechercher input { /*Barre de recherche : hauteur et marges*/
     height: 100%;
     border: none;
+    width: 180px;
 }
 
 .bouton_envoi_1 { /*Barre de recherche : Class pour gérer le bouton "Rechercher"*/
@@ -128,6 +135,10 @@ header p {
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
     width : 35px;
+    margin-right:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bouton_envoi_2{
@@ -157,7 +168,7 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #d4d4d4;
     border-radius: 35px 35px 35px 35px;
     height: 35px;
     margin-left: 15px;
@@ -183,7 +194,7 @@ header p {
 }
 
 .bulle {
-    background-color: #F2F2F2;
+    background-color: #daecfa;
     width: 35px;
     height: 35px;
     border-radius: 35px 35px 35px 35px;
@@ -196,32 +207,30 @@ header p {
 
 #infos{
     display:flex;
+    justify-content: start;
+    align-items: center;
 }
 
 #infos i {
-    height: 8px;
-    width: 15px;
     color: #0065FC;
-    text-align: center;
 }
 
 .bulle2 {
-    position: relative;
-    top: 0px;
-    left: 5px;
-    height: 15px;
-    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     border-radius: 15px 15px 15px 15px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #d4d4d4;
     margin-right: 5px;
 }
 /*----------|----------|----------|----------|----------|----------|     Hebergement      |----------|----------|----------|----------|----------|----------|----------*/
 #Ancre_Hebergement {
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
     height:650px;
-    margin: 1% 1% 1% 1%;
 }
 
 article {
@@ -362,6 +371,8 @@ aside h3 {
     border-radius: 15px;
     border: 2px solid white;
     display:flex;
+    border: none;
+    box-shadow: 2px 6px 5px #d4d4d4;
 }
 
 .image_pop {
@@ -412,8 +423,7 @@ aside h3 {
 /*----------|----------|----------|----------|----------|----------|     Activites     |----------|----------|----------|----------|----------|----------|----------*/
 
 #Ancre_Activites {
-    width: 98%;
-    margin : 1% 1% 1% 1%;
+    width: 100%;
 }
 
 #Activites {
@@ -619,6 +629,10 @@ footer h5{
     /*------------------------------------------HEADER-----------------------------------------------------------------------------------*/
 
     /*------------------------------Menu-------------------------------------------*/
+    html{
+        font-size: 1em;
+        padding: 0 10px;
+    }
 
     #Conteneur_menu { /*Menu 1 général en haut : Espacer Logo à gauche et barre de menu à droite*/
         display: flex;
@@ -681,11 +695,13 @@ footer h5{
 
     .bouton_envoi_2 {
         background-color: #0065FC;
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 10px 10px 10px 10px;
+        width: 50px;
         color: white;
         text-decoration: none;
         border: none;
         display: flex;
+        justify-content: center;
         align-items: center;
         padding-left: 5px;
         padding-right: 5px;
@@ -717,15 +733,13 @@ footer h5{
         align-items: center;
         height: auto;
     }
-
-    article {
-        width: 60%;
+    article{
+        width: 100%;
+        padding: 0;
     }
-
-        article h3 {
-            text-align: center;
-        }
-
+    article h3 {
+        text-align: center;
+    }
     #Annonces1 {
         display: flex;
         align-content: space-around;
@@ -734,23 +748,25 @@ footer h5{
         flex-direction: column;
         align-items: center;
     }
-
     .Bloc_1 {
         width: 400px;
         height: 300px;
-        margin-left: 1%;
-        margin-right: 1%
     }
-
-
     /*-----------------------------------------------------Populaires---------------------------------------------*/
-    #Populaire {
+    #Conteneur_aside{
         width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Populaire {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         margin: auto;
     }
 
     aside {
-        width: 60%;
+        width: 100%;
     }
 
     #Annonces2 {
@@ -761,11 +777,17 @@ footer h5{
 
     .Pop_2 {
         height: 200px;
+        width: 100%;
+    }
+
+    #Plus{
         width: 400px;
+        margin-right: auto;
+        margin-left: auto;
     }
     /*-----------------------------------------------------Activites a Marseille----------------------------------*/
     #Ancre_Activites h3 {
-        width: 400px;
+        width: 100%;
         text-align: center;
         margin: auto;
     }
@@ -780,7 +802,7 @@ footer h5{
 
     .bloc_3 {
         height: 250px;
-        width: 400px;
+        width: 480px;
     }
 
         .bloc_3:nth-child(3) {
@@ -789,7 +811,7 @@ footer h5{
 
     .int_10, .int_11, .int_2 {
         height: 250px;
-        width: 400px;
+        width: 100%;
         margin-top: 20px;
     }
 
@@ -800,9 +822,6 @@ footer h5{
     .image_bloc_3_H1, .image_bloc_3_H2, .image_bloc_3_H3, .image_bloc_3_H4 {
         height: 80%;
     }
-
-
-
     /*-----------------------------------------------------------Footer----------------------------------------------------*/
 
     footer {
@@ -811,6 +830,78 @@ footer h5{
     }
 
     .footer_width {
-        width: 30%;
+        width: 100%;
     }
+}
+
+@media all and (max-width: 500px){
+    /*--Menu--*/
+    html{
+        padding: 0 5px;
+        margin: 0;
+    }
+    #menu_1 li{
+        width: auto;
+    }
+    #menu_1{
+        font-size: 0.8em;;
+    }
+    .title h3{
+        font-size: 0.9em;
+    }
+    .title p{
+        font-size: 0.6em;
+    }
+    /*Populaires*/
+    #Conteneur_aside{
+        width: 100%;
+    }
+    aside{
+        padding: 0 10px;
+    }
+    .Pop_2{
+        height: 150px;
+    }
+    .image_pop{
+        width: 50%;
+    }
+    #Annonces2{
+        height: 500px;
+    }
+    #Plus{
+        width: 100%;
+    }
+    /*Herbergement à Marseille*/
+    /* #Conteneur_article{
+        width: 100%;
+    } */
+    article h3{
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+    #Annonces1{
+        height: 1300px;
+    }
+    .Bloc_1{
+        width: 100%;
+        height: 200px;
+    }
+    #Plus{
+        font-size: 0.7em;;
+    }
+    /*Activités à MArseille*/
+    #Ancre_Activites h3{
+        font-size: 0.9em;
+    }
+    #Activites {
+        height: 1550px;
+        font-size: 0.9em;
+    }
+    .bloc_3 {
+        width: 100%;
+    }
+    .footer_width {
+        width: 100%;
+    }
+
 }
